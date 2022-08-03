@@ -11,7 +11,7 @@ const Header = () => {
        <li><Link to="/login">Login</Link></li>
     </>
     return (
-        <div>
+        <div className="container mx-auto">
         <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
