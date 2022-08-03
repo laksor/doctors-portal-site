@@ -6,7 +6,7 @@ import Header from './Pages/Shared/Header/Header';
 
 function App() {
   return (
-    <div>
+    <div className='px-12'>
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>} />
