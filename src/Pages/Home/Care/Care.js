@@ -6,7 +6,7 @@ const Care = () => {
         <div className='mb-20'>
         <div className="hero">
         <div className="hero-content flex-col lg:flex-row">
-          <img src={treatment} className="w-100 rounded-lg shadow-2xl" alt=""/>
+          <img src={treatment} className="w-100 md:w-90 rounded-lg shadow-2xl" alt=""/>
           <div className=''>
             <h1 className="text-5xl font-bold">Box Office News</h1>
             <p className="">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>

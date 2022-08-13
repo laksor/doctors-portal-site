@@ -3,7 +3,7 @@ import footer from '../../../assets/images/footer.png';
 
 const Footer = () => {
     return (
-        <div>
+        
         <footer style={{ background: `url(${footer})`,
                          backgroundSize: 'cover'}}
         className="p-10">
@@ -30,11 +30,10 @@ const Footer = () => {
         </div>
         </div>
         
-        <div className='footer footer-center p-4 text-base-content'>
-    <p>Copyright © 2022 - All right reserved by ACME Industries Ltd</p>
+        <div className='my-10 text-center'>
+    <p>Copyright © 2022 - All right reserved</p>
   </div>
       </footer>
-        </div>
     );
 };
 
