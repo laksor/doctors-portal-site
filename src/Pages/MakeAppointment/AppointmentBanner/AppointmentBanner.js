@@ -5,7 +5,7 @@ import "react-day-picker/dist/style.css";
 
 const AppointmentBanner = ({date, setDate}) => {
   return (
-    <div class="hero">
+    <div class="hero mt-6">
       <div class="hero-content flex-col lg:flex-row-reverse">
         <img src={chair} class="max-w-sm rounded-lg shadow-2xl" alt="chair" />
         <div>
