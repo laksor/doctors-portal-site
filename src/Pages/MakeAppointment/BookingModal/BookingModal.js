@@ -38,18 +38,21 @@ const BookingModal = ({ treatment, date, setTreatment }) => {
             <input
               type="text"
               name="name"
+              required
               placeholder="Your name"
               className="input input-bordered w-full max-w-xs"
             />
             <input
               type="email"
               name="email"
+              required
               placeholder="Email"
               className="input input-bordered w-full max-w-xs"
             />
             <input
               type="text"
               name="phone"
+              required
               placeholder="Phone"
               className="input input-bordered w-full max-w-xs"
             />

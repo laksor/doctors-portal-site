@@ -6,6 +6,7 @@ import Service from '../Service/Service';
 const AvailableAppointment = ({date}) => {
     const [services, setServices] = useState([]);
     const [treatment, setTreatment] = useState(null);
+    
     useEffect( () =>{
         fetch('http://localhost:5000/service')
         .then(res => res.json())
@@ -20,8 +21,11 @@ const AvailableAppointment = ({date}) => {
                         key={service._id}
                         service={service}
                         setTreatment={setTreatment}
+                        
                         ></Service>)
+                        
                 }
+                 
             </div>
             {treatment && <BookingModal treatment={treatment} date={date} setTreatment={setTreatment}></BookingModal>}
         </div>

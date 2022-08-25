@@ -2,6 +2,8 @@ import React from "react";
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import { useForm } from "react-hook-form";
+import Loading from "../../Shared/Loading/Loading";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -12,15 +14,22 @@ const Login = () => {
     loading,
     error,
   ] = useSignInWithEmailAndPassword(auth);
-  
+
+  const navigate = useNavigate();
   
   if (user || gUser) {
     console.log(gUser);
   }
 
-  const onSubmit = (data) => {
-    signInWithEmailAndPassword(data.email, data.password);
-    console.log(data);
+  let signInError;
+
+  if(error || gError){
+    signInError = <p className="mt-3 text-red-500">{error?.message || gError?.message}</p>
+  }
+
+  const onSubmit = async(data) => {
+    await signInWithEmailAndPassword(data.email, data.password);
+    navigate('/appointment');
   }
 
   return (
@@ -31,7 +40,7 @@ const Login = () => {
           <form onSubmit={handleSubmit(onSubmit)}>
             <div class="form-control w-full max-w-xs">
               <label class="label">
-                <span class="label-text">Email</span>
+                <span class="label-text font-bold">Email</span>
               </label>
               <input
                 type="email"
@@ -55,7 +64,7 @@ const Login = () => {
                 <p className="ml-1 mt-2 text-red-400">{errors.email.message}</p>
               )}
               <label class="label">
-                <span class="label-text">Password</span>
+                <span class="label-text font-bold mt-3">Password</span>
               </label>
               <input
                 type="password"
@@ -79,16 +88,18 @@ const Login = () => {
                 <p className="ml-1 mt-2 text-red-400">{errors.password.message}</p>
               )}
             </div>
+            {signInError}
             {
-              loading || gLoading 
-              ? <button className="btn btn-primary loading mt-3 w-full max-w-xs"> loading... </button>
+               loading || gLoading 
+              ? <Loading></Loading>
               : <input
-              className="btn btn-accent mt-3 w-full max-w-xs"
+              className="btn btn-accent mt-5 w-full max-w-xs"
               type="submit"
               value="Login"
             />
             }
           </form>
+          <p><small>New to Doctor's portal? <Link className="text-primary" to="/signup">Create New Account</Link></small></p>
           <div className="divider">OR</div>
           <button
             className="btn btn-outline"
