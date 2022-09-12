@@ -12,13 +12,16 @@ const Dashboard = () => {
       </div>
       <div className="drawer-side">
         <label htmlFor="dash-sidebar" className="drawer-overlay"></label>
-        <ul className="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
+        <ul className="menu p-4 overflow-y-auto w-48 bg-base-100 text-base-content">
           {/*<!-- Sidebar content here -->*/}
           <li>
             <Link to="/dashboard">My appointment</Link>
           </li>
           <li>
             <Link to="/dashboard/review">My Review</Link>
+          </li>
+          <li>
+            <Link to="/dashboard/history">My History</Link>
           </li>
         </ul>
       </div>
