@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCreateUserWithEmailAndPassword, useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
+import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import { useForm } from "react-hook-form";
 import Loading from "../../Shared/Loading/Loading";
@@ -30,8 +30,9 @@ const SignUp = () => {
     signInError = <p className="mt-3 text-red-500">{error?.message || gError?.message}</p>
   }
 
-  const onSubmit = async(data) => {
-    await createUserWithEmailAndPassword(data.email, data.password);
+  const onSubmit = async data => {
+    console.log(data);
+    await createUserWithEmailAndPassword( data.email, data.password);
     
   }
     return (
