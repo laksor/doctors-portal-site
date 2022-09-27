@@ -1,4 +1,4 @@
-import { useQuery } from '@tanstack/react-query';
+import { useQuery } from 'react-query';
 import Loading from "../Shared/Loading/Loading";
 import UserRow from "./UserRow";
 
@@ -29,9 +29,10 @@ const Users = () => {
           </thead>
           <tbody>
             {
-              users?.map(user => <UserRow
+              users?.map((user, index) => <UserRow
                 key={user._id}
                 user={user}
+                index={index}
                 refetch={refetch}
                 ></UserRow>)
             }
