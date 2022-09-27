@@ -34,9 +34,9 @@ function App() {
           </RequireAuth>
         } >
         <Route index element={<MyAppointments></MyAppointments>}></Route>
-        <Route path="review" element={<MyReview></MyReview>}></Route>
-        <Route path="history" element={<MyHistory></MyHistory>}></Route>
-        <Route path="users" element={
+        <Route path='review' element={<MyReview></MyReview>}></Route>
+        <Route path='history' element={<MyHistory></MyHistory>}></Route>
+        <Route path='users' element={
           <RequireAdmin>
             <Users></Users>
           </RequireAdmin>
