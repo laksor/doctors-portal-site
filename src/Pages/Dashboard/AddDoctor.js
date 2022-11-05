@@ -12,14 +12,6 @@ const AddDoctor = () => {
 
     const imageStorageKey='ee82d4b6c740e70cc1c96e26615895f0';
 
-    /**
-     * 3 ways to store images
-     * 1. Third party storage //Free open public storage is ok for Practice project 
-     * 2. Your own storage in your own server (file system)
-     * 3. Database: Mongodb 
-     * 
-     * YUP: to validate file: Search: Yup file validation for react hook form
-    */
     const onSubmit = async data => {
         const image = data.image[0];
         const formData = new FormData();
@@ -147,7 +139,7 @@ const AddDoctor = () => {
                         })}
                     />
                     <label className="label">
-                        {errors.name?.type === 'required' && <span className="label-text-alt text-red-500">{errors.name.message}</span>}
+                        {errors.name?.type === 'required' && <span className="label-text-alt text-red-500">{errors.file.message}</span>}
                     </label>
                 </div>
 
