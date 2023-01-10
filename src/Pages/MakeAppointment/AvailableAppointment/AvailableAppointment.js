@@ -14,6 +14,7 @@ const AvailableAppointment = ({date}) => {
 
     const {data: services, isLoading, refetch} = useQuery(['available', formattedDate], () => 
          fetch(`https://doctor-portal-server-vqyw.onrender.com/available?date=${formattedDate}`).then(res => res.json())
+         fetch(`https://doctor-portal-server-vqyw.onrender.com//available?date=${formattedDate}`).then(res => res.json())
     )
     if(isLoading){
         return <Loading></Loading>
