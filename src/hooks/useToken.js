@@ -8,7 +8,7 @@ const useToken = user =>{
         const email = user?.user?.email;
         const currentUser = {email: email};
         if(email){
-            fetch(`https://doctors-portal-ahmed-laskor.herokuapp.com/user/${email}`, {
+            fetch(`https://doctor-portal-server-vqyw.onrender.com/user/${email}`, {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'

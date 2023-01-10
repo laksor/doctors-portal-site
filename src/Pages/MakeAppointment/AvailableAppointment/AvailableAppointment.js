@@ -13,14 +13,14 @@ const AvailableAppointment = ({date}) => {
     const formattedDate = format(date, 'PP');
 
     const {data: services, isLoading, refetch} = useQuery(['available', formattedDate], () => 
-         fetch(`https://doctors-portal-ahmed-laskor.herokuapp.com/available?date=${formattedDate}`).then(res => res.json())
+         fetch(`https://doctor-portal-server-vqyw.onrender.com/available?date=${formattedDate}`).then(res => res.json())
     )
     if(isLoading){
         return <Loading></Loading>
     }
 
     //useEffect( () =>{
-        //fetch(`https://doctors-portal-ahmed-laskor.herokuapp.com/available?date=${formattedDate}`)
+        //fetch(`https://doctor-portal-server-vqyw.onrender.com/available?date=${formattedDate}`)
         //.then(res => res.json())
         //.then(data => setServices(data));
     //}, [formattedDate])
