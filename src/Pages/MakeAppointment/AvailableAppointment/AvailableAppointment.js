@@ -6,7 +6,7 @@ import BookingModal from '../BookingModal/BookingModal';
 import Service from '../Service/Service';
 
 const AvailableAppointment = ({date}) => {
-    //const [services, setServices] = useState([]);
+    //const [services, setServices] = useState([])
 
     const [treatment, setTreatment] = useState(null);
 
