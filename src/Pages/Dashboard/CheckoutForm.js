@@ -7,7 +7,7 @@ import { useState } from "react";
 const CheckoutForm = (appointment) => {
   const stripe = useStripe();
   const elements = useElements();
-  const [cardError, setCardError] = useState("");
+  const [cardError, setCardError] = useState('');
   const [clientSecret, setClientSecret] = useState('');
 
   const {price} = appointment;

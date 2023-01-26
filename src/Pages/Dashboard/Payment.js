@@ -32,7 +32,7 @@ const Payment = () => {
       <div className="card w-50 max-w-md bg-base-100 shadow-xl my-12">
         <div className="card-body">
           <p className="text-success font-bold">
-            Hello, {appointment.patientName}
+            Hello, {appointment?.patientName}
           </p>
           <h2 className="card-title">Pay for {appointment.treatment}</h2>
           <p>
