@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# ⭐The Medicare React JS Site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2>Description</h2>
+<p>
+Medicare is a Fully Responsive React website built on Bootstrap 5 & Pure React js. A Single page web app with dashboard where people can pick the date and time and fix an appointment. 
+</p>
 
-## Available Scripts
+<h2>Website Live Link</h2><a href="https://ahmed-medicare-site.web.app/" rel="nofollow">https://ahmed-medicare-site.web.app/</a>
 
-In the project directory, you can run:
+<h2>Client side Code Link</h2><a href="https://github.com/laksor/doctors-portal-site" rel="nofollow">https://github.com/laksor/doctors-portal-site</a>
 
-### `npm start`
+<h2>Server side Code Link</h2><a href="https://github.com/laksor/doctors-portal-server" rel="nofollow">https://github.com/laksor/doctors-portal-server</a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h2>Features and Functionality</h2>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<ul> 
+<li>Online appointment making</li>
+<li>Review appointments</li>
+<li>A dashboard is available for authenticated admin</li>
+<li>Admin can add see all the appointments</li>
+<li>User can get an appointment of his/her desire day</li>
+  <li> CRUD operations ( Add , Manage and Delete services) </li>
+  <li> Authentication ( Firebase, JWT ) </li>
+  <li> Single Page Application (SPA)</li>
+  <li> Patients Database </li>
+  <li> Admin can add doctor and delete doctor as well </li>
+</ul>
 
-### `npm test`
+<h2>Used Technology</h2>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p>FrontEnd</p>
 
-### `npm run build`
+<ul> 
+  <li>React Js</li>
+  <li>Javascript (ES6)</li>
+  <li>HTML-5</li>
+  <li>CSS-3</li>
+</ul>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p>BackEnd</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<ul> 
+  <li>Node Js</li>
+  <li>Express js</li>
+</ul>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p>Database</p>
 
-### `npm run eject`
+<ul> 
+  <li>Mongo DB</li>
+</ul>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<h2>Used Library</h2>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<ul> 
+  <li>React Router 6</li>
+  <li>React Firebase Hooks</li>
+  <li>React Toastify</li>
+  <li>JWT (  JSON Web Token )</li>
+  <li>AXIOS</li>
+  <li>React Bootstrap</li>
+  <li>Bootstrap 5.2</li>
+</ul>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<h2>Hosting</h2>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<p>Client side Hosting - Firebase</p>
+<p>Server side Hosting - Render</p>
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
