@@ -15,7 +15,7 @@ Medicare is a Fully Responsive React website built on Bootstrap 5 & Pure React j
 
 <ul> 
 <li>Online appointment making</li>
-<li>Review appointments</li>
+<li>Stripe payment & nodemailer </li>
 <li>A dashboard is available for authenticated admin</li>
 <li>Admin can add see all the appointments</li>
 <li>User can get an appointment of his/her desire day</li>
@@ -54,6 +54,8 @@ Medicare is a Fully Responsive React website built on Bootstrap 5 & Pure React j
 
 <ul> 
   <li>React Router 6</li>
+  <li>Stripe</li>
+  <li>Nodemailer</li>
   <li>React Firebase Hooks</li>
   <li>React Toastify</li>
   <li>JWT (  JSON Web Token )</li>
