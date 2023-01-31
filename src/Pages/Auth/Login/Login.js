@@ -108,7 +108,7 @@ const Login = () => {
             />
             }
           </form>
-          <p><small>New to Doctor's portal? <Link className="text-primary" to="/signup">Create New Account</Link></small></p>
+          <p><small>New to Medicare? <Link className="text-primary" to="/signup">Create New Account</Link></small></p>
           <div className="divider">OR</div>
           <button
             className="btn btn-outline"

@@ -114,9 +114,12 @@ const CheckoutForm = ({ appointment }) => {
                         },
                     }}
                 />
-                <button className='btn btn-success btn-sm mt-4' type="submit" disabled={!stripe || !clientSecret || success}>
+                <button className='btn btn-success btn-sm mt-4 mb-4' type="submit" disabled={!stripe || !clientSecret || success}>
                     Pay
                 </button>
+
+                <p>Demo card number : 4242 continue</p>
+                <p>Type Any future date , Any CVC and Any 5 digit zip</p>
             </form>
             {
                 cardError && <p className='text-red-500'>{cardError}</p>
